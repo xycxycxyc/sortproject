@@ -17,6 +17,7 @@ def bubbleSort(nums):
             return nums
     return nums
 
+
 if __name__ =='__main__':
     test_nums = [2, 3, 1, 7, 3, 4]
     test_nums = bubbleSort(test_nums)
