@@ -5,12 +5,12 @@
 # @File  : mergesort.py
 
 
-def mergesort(nums):
+def merge_sort(nums):
     if len(nums)<2:
         return nums
     middle = len(nums)//2
     left, right = nums[0:middle], nums[middle:]
-    return merge(mergesort(left), mergesort(right))
+    return merge(merge_sort(left), merge_sort(right))
 
 
 def merge(left, right):
@@ -29,4 +29,4 @@ def merge(left, right):
 
 if __name__=='__main__':
     test_nums = [7, 6, 5, 6, 3, 9, 3]
-    print(mergesort(test_nums))
+    print(merge_sort(test_nums))

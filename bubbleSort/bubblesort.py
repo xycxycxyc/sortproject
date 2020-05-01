@@ -2,10 +2,10 @@
 # -*- coding:utf-8 -*-
 # @Time  :2020/4/20 15:17
 # @Author: xuyongchuan
-# @File  : bubbleSort.py.py
+# @File  : bubblesort.py.py
 
 
-def bubbleSort(nums):
+def bubble_sort(nums):
     haschange = True
     for i in range(1, len(nums)):
         haschange = False
@@ -18,9 +18,9 @@ def bubbleSort(nums):
     return nums
 
 
-if __name__ =='__main__':
+if __name__ == '__main__':
     test_nums = [2, 3, 1, 7, 3, 4]
-    test_nums = bubbleSort(test_nums)
+    test_nums = bubble_sort(test_nums)
     print(test_nums)
 
 

@@ -2,10 +2,10 @@
 # -*- coding:utf-8 -*-
 # @Time  :2020/4/20 22:40
 # @Author: xuyongchuan
-# @File  : insertSort.py
+# @File  : insertsort.py
 
 
-def insertionsort(nums):
+def insertion_sort(nums):
     for i in range(0, len(nums)):
         current = nums[i]
         while i-1 >= 0 and nums[i-1] > current:
@@ -17,6 +17,6 @@ def insertionsort(nums):
 
 if __name__ == '__main__':
     test_nums = [7, 6, 5, 6, 3, 9, 3]
-    test_nums = insertionsort(test_nums)
+    test_nums = insertion_sort(test_nums)
     print(test_nums)
 
